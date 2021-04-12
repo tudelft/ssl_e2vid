@@ -1,0 +1,24 @@
+data:
+    path: datasets/data/ECD/
+    mode: events # events/time/frames
+    window: 50000 # events/time/frames
+
+model_flow:
+    flow_scaling: 128
+    mask_output: True
+
+loader:
+    resolution: [180, 240] # H x W
+    augment: []
+    gpu: 0
+
+vis:
+    enabled: True
+    px: 400
+    store: False
+
+hot_filter:
+    enabled: True
+    max_px: 100
+    min_obvs: 5
+    max_rate: 0.8

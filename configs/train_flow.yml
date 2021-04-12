@@ -1,0 +1,39 @@
+experiment: Default
+
+data:
+    path: datasets/data/training/
+    mode: events # events/time/frames
+    window: 5000 # events/time/frames
+    num_bins: 5
+
+model_flow:
+    name: EVFlowNet # FireFlowNet/EVFlowNet
+    base_num_channels: 32
+    kernel_size: 3
+    mask_output: False
+
+loss:
+    flow_regul_weight: 1
+
+optimizer:
+    name: Adam
+    lr: 0.0001
+
+loader:
+    n_epochs: 120
+    batch_size: 1
+    resolution: [128, 128] # H x W
+    augment: ["Horizontal", "Vertical", "Polarity"]
+    augment_prob: [0.5, 0.5, 0.5]
+    gpu: 0
+
+vis:
+    verbose: True
+    enabled: False
+    px: 400
+
+hot_filter:
+    enabled: True
+    max_px: 100
+    min_obvs: 5
+    max_rate: 0.8
