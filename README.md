@@ -22,9 +22,9 @@ Similarly to researchers from [Monash University](https://github.com/TimoStoff/e
 
 ## Inference
 
-Download our pre-trained models from [here](https://surfdrive.surf.nl/files/index.php/s/sv36q8ZTqVZuWl9). 
+Download our pre-trained models from [here](https://1drv.ms/u/s!Ah0kx0CRKrAZjyw3nbvTo-lmXPvO?e=1r6SKD). 
 
-Our HDF5 version of sequences from the Event Camera Dataset can also be downloaded from [here](https://surfdrive.surf.nl/files/index.php/s/sv36q8ZTqVZuWl9) for evaluation purposes.
+Our HDF5 version of sequences from the Event Camera Dataset can also be downloaded from [here](https://1drv.ms/u/s!Ah0kx0CRKrAZjysmUU3tB7VkN2z3?e=S9CGut) for evaluation purposes.
 
 To estimate optical flow from the input events:
 
@@ -50,7 +50,7 @@ In `configs/`, you can find the configuration files associated to these scripts 
 
 ## Training
 
-Our framework can be trained using any event camera dataset. However, if you are interested in using our training data, you can download it from [here](https://surfdrive.surf.nl/files/index.php/s/sv36q8ZTqVZuWl9). The datasets are expected at `datasets/data/`, but this location can be modified in the configuration files.
+Our framework can be trained using any event camera dataset. However, if you are interested in using our training data, you can download it from [here](https://1drv.ms/u/s!Ah0kx0CRKrAZjysmUU3tB7VkN2z3?e=S9CGut). The datasets are expected at `datasets/data/`, but this location can be modified in the configuration files.
 
 To train an image reconstruction and optical flow model, you need to adapt the training settings in `configs/train_reconstruction.yml`. Here, you can choose the training dataset, the number of input events, the neural networks to be used (EV-FlowNet or FireFlowNet for optical flow; E2VID or FireNet for image reconstruction), the number of epochs, the optimizer and learning rate, etc. To start the training from scratch, run:
 
